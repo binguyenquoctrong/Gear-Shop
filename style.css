@@ -1,0 +1,84 @@
+
+.logo{width: 20px; height: 20px;}
+body {background: #ffffff;font-family: 'Roboto', sans-serif;color: #333;font-size: 16px;}
+#div1 {background-color: aliceblue;border-bottom: 1px solid #ebebeb; width:100%; height:20px;float: left;margin: 0px 10px 10px 10px;}
+#hotline {float: left;color: #ce0069 ;}
+#div3 {background: #fff;padding:20px 1px;border-top: 1px solid #fff;}
+#div2 {float: right;word-spacing: 2px;padding-right: 20px;}
+#top-right {float: right;display: inline-block;padding: 0px;}
+#d3 {width: 20%;height:100px;box-sizing: border-box;float: left;}
+#d4 {width: 60%;height:50px;float: left;box-sizing: border-box; margin-top: 10px;text-align: center;}
+#d5{width: 20%;height:50px;box-sizing: border-box;float:left;}
+.custom{text-align: center; margin-left: 5px;}
+a,a:hover,a:active,a:visited{text-decoration: none}
+#formdangnhap{width: 100%; height: 200px; float: left;margin-left: 100px;}
+#formdangky{width: 100%; height: 600px; float: left;}
+#lienhe{width: 100%; height: 1100px; float: left;}
+
+#d6{width: 70%; height: 300px;margin-top: 10px;float: left; box-sizing: border-box;}
+#banner{width: 30%;height: 300px;float: left;box-sizing: border-box;margin-top: 10px;}
+
+#muahang { float: left;width: 100%;height: 1000px;background-color: white;margin-top:20px;border: 2px yellow solid;}
+.d7{width: 100%; height: 40px; background-color: gainsboro; float: left;margin-top: 50px;}
+.d8{width: 100%; height: 600px; background-image: url(email.jpg);float: left;margin-top: 0px;}
+
+.d12{width: 100%;height: auto;float: left;}
+
+#giohang {width: 100%;height: 100px;background-color: white;margin-top: 0px;}
+
+.menu{background-color: black;width: 100%;height: 50px;float: right;margin-top: 10px;padding-bottom: 30px;font-size: 30px;}
+
+#khungemail {float: left;color: darkgreen;margin: 0px 10px 10px 10px;}
+#dangkyemail {float: right;word-spacing: 2px;padding-right: 20px;margin-top: 10px;margin-left: 70px;}
+
+
+  ul.menu>li 
+        {
+            display: block;width: 15%;height: 20px;margin: 2%;color: yellow;text-align: center;padding-bottom: 20px;float: left;position: relative;
+        z-index: 1;
+        }
+    .submenu {width:100%; display: none;}
+	ul.submenu>li 
+    {	
+        list-style-type:none;background-color: black;left: 10px;width:100%;
+	}
+li:hover ul{display: inline-block; list-style-image: inherit;margin-left: -40px;}
+ul.submenu>li:hover {background-color: blue;border: 1px grey solid}
+.menu li a{color: yellow;}
+            #ngoai {width: 800px;height: 300px;overflow: hidden;}
+            #trong {width: 3200px;height: 300px;}
+            #trong img {width: 800px;height: 300px;float:left;}
+
+ #giohang {width: 100%;height: 500px;overflow: scroll;display: none;background-color: white;border: 0px solid black;}
+            #giohang table {width: 100%; float: left;}
+            #giohang img {width: 100px;height: 100px;}
+            div table {border: 2px solid black;}
+.item {width: 200px;height: 200px;float: center;}
+
+
+
+.tainghe{width: 100%;height: 300px;float: left;}
+
+div.tainghe {
+    
+    border: 1px solid white;
+    float: left;
+    width: 180px;
+    margin:30px;
+    margin-top: 70px;
+    margin-left: 50px;
+}
+
+div.tainghe:hover {
+    border: 1px solid black;
+}
+
+div.tainghe img {
+    width: 100%;
+    height: 200px;
+}
+
+div.desc {
+    padding: 20px;
+    text-align: center;
+}

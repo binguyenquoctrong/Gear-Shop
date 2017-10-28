@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form đăng ký</title>
+        <link href='style.css' rel='stylesheet' type='text/css' />
+        <script src="gallery.js"></script>
+        <script>
+        function check()
+            {   
+                if (document.f.txt6.checked==true)
+                    {
+                        var mau_hoten=/^[a-zA-z ]+([a-zA-z ]+)*$/;
+                        var mau_dt=/^[0-9]{10,11}$/;
+                        var mau_email=/^[a-zA-Z]+[0-9]*[@][a-zA-Z]+[0-9]*[.][a-zA-Z]+([.][a-zA-Z]+)?/;
+                        var mau_password= /^(?=.*\d+.*)(?=.*[A-Z]+.*)\w{6,16}$/gi;
+                        if (mau_hoten.test(document.f.txt1.value)==false)
+                            {
+                                alert("Tên không đúng");
+                                document.f.txt1.focus();
+                                return false;
+                            }
+                        else if(mau_dt.test(document.f.txt2.value)==false)
+                            {
+                                alert("Số điện thoại không hợp lệ");
+                                document.f.txt2.focus();
+                                return false;
+                            }
+                        else if (mau_email.test(document.f.txt3.value)==false)
+                            {
+                                alert("Email không hợp lệ");
+                                document.f.txt3.focus();
+                                return false;
+                            }
+                        else if (mau_password.test(document.f.txt4.value)==false)
+                            {
+                                alert("Password không đủ mạnh");
+                                document.f.txt4.focus();
+                                return false;
+                            }
+                        else if(document.f.txt4.value!=document.f.txt5.value)
+                            {
+                                alert("Password không trùng khớp");
+                                document.f.txt5.focus();
+                                return false;
+                            }
+                    }
+                else{
+                    alert("Bạn chưa đồng ý với các điều khoản!");
+                    return false;
+                }
+                alert("Bạn đã đăng ký thành công!");
+                return true;
+            }
+        </script>
+    </head>
+   <body onload="chay()" onload="init()">
+        <!--đầu trang-->
+    <div id="head">
+        <div id="div1">
+                <div id="hotline">Hotline: 0868 005 001 </div>
+                <div id="div2">
+                    <a href="Sign%20in.html"><img class="logo" alt="Đăng nhập" src="signin.png" />Đăng nhập</a>
+                    <a href="Sign%20up.html"><img class="logo" alt="Đăng ký" src="signup.png" />Đăng ký</a>
+                    <a href="https://www.google.com/maps/place/GEARVN/@10.795948,106.6500753,17z/data=!3m1!4b1!4m5!3m4!1s0x3175294a0c97a181:0x6aece518177f9a92!8m2!3d10.795948!4d106.652264"><img class="logo" src="map.png" alt="Bản đồ" />Bản đồ </a>
+                </div>
+        </div>
+        <div id="d3">
+            <a href="index.html">
+                <img src="logo.png" width="200px" height="100px" />
+            </a>
+        </div>
+        <div id="d4">
+            <form id="searchbox">
+                <input type="text" size="90" placeholder="Nhập mã hoặc tên sản phẩm..." />
+                <button type="button" onclick="alert('Không tìm được')">Tìm</button>
+            </form>
+            <div class="custom">339/17A Nguyễn Thái Bình, P12, Q Tân Bình, Tp Hồ Chí Minh</div>
+            <strong>GIAO HÀNG</strong><img src="giaohang.png" alt="GIAO HÀNG" /> <span style="color:red"> <strong>Toàn Quốc</strong></span> --------- <strong> HỖ TRỢ</strong><img src="trahang.png" alt="HỔ TRỢ" /> <span style="color:red"><strong> Nâng Cấp</strong></span>
+        </div>
+        <div id="d5">
+            <a href="index.html">
+                <img src="logo.png" width="200px" height="100px" />
+            </a>
+        </div>
+    </div>
+          <!--menu trang-->
+          <div>
+             <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+    <li><a href="banphim.html" >Bàn Phím</a>
+    	<ul class="submenu">
+            <li><a href="banphim1.html">Razer</a></li>
+            <li><a href="banphim2.html">Steelseries</a></li>
+            <li><a href="banphim3.html">Filco</a></li>
+            <li><a href="banphim4.html">Ducky</a></li>
+            <li><a href="banphim5.html">Corsair</a></li>
+        </ul>
+    </li>
+        <li><a href="chuot.html" >Chuột</a>
+    	<ul class="submenu">
+            <li><a href="chuot1.html" >Steelseries</a></li>
+            <li><a href="chuot2.html" >Zowie</a></li>
+            <li><a href="chuot3.html" >Logitech</a></li>
+            <li><a href="chuot4.html" >Fuhlen</a></li>
+            <li><a href="chuot5.html" >Mionix</a></li>
+        </ul>
+    </li>
+      <li><a href="tainghe.html">Tai nghe</a>
+    	<ul class="submenu">
+            <li><a href="tainghe1.html">Hyber X</a></li>
+            <li><a href="tainghe2.jpg">Steelseries</a></li>
+            <li><a href="tainghe3.html">Razer</a></li>
+            <li><a href="tainghe4html">Logitech</a></li>
+            <li><a href="tainghe5.html">MSI</a></li>
+        </ul>
+    </li>
+            <li><a href="Lien%20he.html">Liên Hệ</a></li>
+              </ul></div>
+             
+       <div id="formdangky">
+       <h4>Đăng ký</h4>
+        <form name="f" action="Sign%20in.html">
+            <p> Tên người đăng nhập <input type="text" name="txt1" placeholder="Nhập tên  (Không dấu)"/>*</p>
+        <p> Số điện thoại Di động <input type="text" name="txt2" placeholder="Số điện thoại của bạn"/>*</p>
+        <p> Email  <input type="text" name="txt3" placeholder="Email của bạn"/>*</p>
+        <p> Password <input type="password" name="txt4"/>*</p>
+        <p> Nhập lại password <input type="password" name="txt5"/>*</p>
+            <p align="left"><strong>Điều Khoản thành viên</strong></p>
+            <iframe src="term.png" width="600" height="200" scrolling="yes" ></iframe>
+        <p><input type="checkbox" name="txt6"/>Tôi đã đọc và đồng ý với các điều khoản trên</p>
+        <p><input type="submit" value="submit" onclick="return check()"></p>
+                <p>* Vui lòng nhập thông tin của bạn</p>
+        </form>
+        </div>
+        
+        <div class="d7"><div id="khungemail"><h3>Mua hàng online với nhiều ưu đãi hơn tại GEARVN</h3></div>
+                 <div id="dangkyemail">
+                 <input type="text" placeholder="Nhập email của bạn....">
+                     <button type="button" type="submit"><a href="Sign%20up.html" style="text-decoration: none">Đăng ký</a></button>
+    </div>
+    </div>
+       
+    <div class="d8"><div id="khungemail" ><p align="left">
+   <br/>
+      GEARVN.COM - SHOP GAMING GEAR HCM
+<br/>Địa chỉ: 339/17A Nguyễn Thái Bình, P12, Q Tân Bình, Tp Hồ Chí Minh
+<br/>Quản Lý : 0909 517 975 (Mr Thế Anh) - 0906 658 807 (Ms Khang)
+<br/>Email: gearvn.com@gmail.com
+<br/>Hotline: 0868 005 001
+    </p>
+        </div>
+        <div id="dangkyemail"> <p align="center"><strong>Vài lời nói</strong>
+       <br/> Chúng tôi cam kết bán hàng thật xuất xứ 
+       <br/>từ ngoại quốc, đảm bảo về thương hiệu và hình thức, 
+       <br/>Dịch vụ bảo hành tận nơi và cam kết đổi trả nếu sản phẩm
+       <br/>có lỗi
+    </p>
+    </div>
+    </div>
+
+    </body>
+</html>
